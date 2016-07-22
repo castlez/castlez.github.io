@@ -1,0 +1,23 @@
+body {
+    background-image:url(Pictures/bg.png);
+    background-size:85%; 
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.text {
+    font-size: 150px;
+    color: lawngreen;
+}
+
+.textsmall{
+    font-size: 100px;
+    color: lawngreen;
+}
+div.console {
+    position: relative;
+    float:left;
+    margin-left: 20%;
+    margin-top: 10%;
+    resize: both;
+}
