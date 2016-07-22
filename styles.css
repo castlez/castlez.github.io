@@ -2,22 +2,18 @@ body {
     background-image:url(Pictures/bg.png);
     background-size:85%; 
     background-repeat:no-repeat;
-    background-position: center;
+    background-position: top left;
 }
 
 .text {
-    font-size: 150px;
+    font-size: 180%;
     color: lawngreen;
 }
 
-.textsmall{
-    font-size: 100px;
-    color: lawngreen;
-}
 div.console {
     position: relative;
     float:left;
-    margin-left: 20%;
-    margin-top: 10%;
+    margin-left: 11%;
+    margin-top: 5%;
     resize: both;
 }
