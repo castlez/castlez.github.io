@@ -3,20 +3,17 @@ function submitjoke() {
     
     var txt = document.getElementById("inputjoke").value;
     
-    //var file_json = require('./jokes.json');
-    //var file_json = $.getJSON("jokes.json", function(data){
-      //  alert(data;
-    //});
-    //var jokes = JSON.parse($(file_json).txt);
+    //var jokes = JSON.parse($("jokes.json").text);
     
-    $.getJSON("jokes.json", function (data) {
-       // data.push("3", "another joke");
-        
-        var after = JSON.stringify(data.push("3", "dumb joke"));
-        localStorage.setItem('jokes', after);
-        alert(after);
-    });
+    $jokestring = file_get_contents('jokes.json');
     
+    $data = json_decode($jokestring, true);
+    
+    $data[0]['1'] = "json joke";
+    // or if you want to change all entries with activity_code "1"
+    foreach ($data as $key => $entry) {
+        $data['1'] = "TENNIS";
+    }
 }
 
 // TODO: FOR GETTING JOKES
