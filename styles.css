@@ -1,34 +1,54 @@
-.consolebody {
-    background-image:url(Pictures/bg.png);
-    background-size:85%; 
-    background-repeat:no-repeat;
-    background-position: top left;
+.title {
+    text-align: center;
+    padding-top: 15%;
+    font-size: 100;
+    margin: 0;
 }
 
-a {
-    font-size: 180%;
-    color: lawngreen;
+.menuitem {
+    text-align: center;
+    font-size: 31; 
+    margin: 0;
 }
 
-input[type=text] {
-    background-color: black;
-    color: lawngreen;
-    border: none;
-    font-size: 180%;
+ul {
+    list-style-type:none;
+}
+
+body {
+  animation: colorchange 5s; /* animation-name followed by duration in seconds*/
+     /* you could also use milliseconds (ms) or something like 2.5s */
+  -webkit-animation: colorchange 5s; /* Chrome and Safari */
     
+  background-color: black; /*this doesnt work*/
 }
 
-button {
-    border: none;
-    background-color: black;
-    color: lawngreen;
-    font-size: 180%;
+@keyframes colorchange
+{
+    0%   {background: white;}
+    10%  {background: #ededed;}
+    20%  {background: #dbdbdb;}
+    30%  {background: #c1c1c1;}
+    40%  {background: #bcbcbc;}
+    50%  {background: #9b999b;}
+    60%  {background: #878587;} 
+    70%  {background: #777777;}
+    80%  {background: #5b5b5b;}
+    90%  {background: #3a3a3a;}
+    100% {background: #000000;}
 }
 
-.console {
-    position: relative;
-    float:left;
-    margin-left: 11%;
-    margin-top: 5%;
-    resize: both;
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+    0%   {background: white;}
+    10%  {background: #ededed;}
+    20%  {background: #dbdbdb;}
+    30%  {background: #c1c1c1;}
+    40%  {background: #bcbcbc;}
+    50%  {background: #9b999b;}
+    60%  {background: #878587;} 
+    70%  {background: #777777;}
+    80%  {background: #5b5b5b;}
+    90%  {background: #3a3a3a;}
+    100% {background: #000000;}
 }
