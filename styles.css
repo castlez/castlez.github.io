@@ -1,4 +1,4 @@
-.consolebody {
+body {
     background-size:85%; 
     background-repeat:no-repeat;
     background-position: top left;
@@ -22,12 +22,6 @@ p {
 
 .sc a {
     padding-left: 10%;
-}
-
-button {
-    border: none;
-    background-color: black;
-    color: lawngreen;
 }
 
 .console {
