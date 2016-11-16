@@ -1,34 +1,38 @@
 .consolebody {
-    background-image:url(Pictures/bg.png);
     background-size:85%; 
     background-repeat:no-repeat;
     background-position: top left;
+    background-color: black;
 }
 
 a {
-    font-size: 180%;
     color: lawngreen;
 }
 
-input[type=text] {
-    background-color: black;
+.title {
+    font-size: 200%;
+}
+
+p {
     color: lawngreen;
-    border: none;
-    font-size: 180%;
-    
+    padding-left: 10%;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.sc a {
+    padding-left: 10%;
 }
 
 button {
     border: none;
     background-color: black;
     color: lawngreen;
-    font-size: 180%;
 }
 
 .console {
+    font-size: 170%;
     position: relative;
     float:left;
-    margin-left: 11%;
-    margin-top: 5%;
     resize: both;
 }
