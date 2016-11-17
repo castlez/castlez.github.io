@@ -14,13 +14,20 @@
             <br>
             <button onclick="down()" style="padding-left:32%;">down</button>
             <script type="application/javascript">
-                var values = [[0,0,0,123],
-                             [0,0,1,0],
-                             [0,0,2048,0],
-                             [0,12,0,0]];
+                var values = [[0,0,2,0],
+                             [0,0,2,0],
+                             [2,0,0,0],
+                             [2,0,0,0]];
                 
                 function up(){
-                    
+                    for(var i = 0; i < values.length; i++){
+                        for(var k = 0; k < values[i].length; k++){
+                            if(i != 3 && values[i][k] === values[i+1][k]){
+                                values[i][k] = values[i][k] *2;
+                            }    
+                        }
+                    }
+                    draw();
                 }
                 
                 function down(){
@@ -53,7 +60,7 @@
                     var board = document.getElementById("gameboard");
                     if (board.firstChild){
                         while (board.hasChildNodes()) {
-                            node.removeChild(board.lastChild);
+                            board.removeChild(board.lastChild);
                         }
                     }
                     
