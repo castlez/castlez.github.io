@@ -1,10 +1,11 @@
 <html>
     <head>
         <link rel=stylesheet href="styles.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     </head>
     <body>
         <div class="console">
-            <a >root@website:~$ ./playGame.sh</a>
+            <a >root@website:$ ./playGame.sh</a>
             <br>
             <div class="game" id="gameboard"></div>
             <button onclick="up()" style="padding-left:35%;">up</button>
@@ -14,14 +15,14 @@
             <br>
             <button onclick="down()" style="padding-left:32%;">down</button>
             <script type="application/javascript">
-                var values = [[0,0,2,0],
-                             [0,0,2,0],
-                             [2,0,0,0],
+                var values = [[0,0,222,0],
+                             [0,0,22,0],
+                             [2,2390,0,0],
                              [2,0,0,0]];
                 
                 function up(){
-                    for(var i = 0; i < values.length; i++){
-                        for(var k = 0; k < values[i].length; k++){
+                    for(var i = values.length; i > 0; i--){
+                        for(var k = values[i].length; k > 0; k--){
                             if(i != 3 && values[i][k] === values[i+1][k]){
                                 values[i][k] = values[i][k] *2;
                             }    
@@ -45,14 +46,14 @@
                 function formatVal(x){
                     var os = x.toString().length;
                     switch(os){
-                        case 3:
+                        case 4:
                             return "_".concat(x.toString());
+                        case 3:
+                            return "_".concat(x.toString(), "_");
                         case 2:
-                            return "__".concat(x.toString());
+                            return "_".concat(x.toString(), "__");
                         case 1:
-                            return "___".concat(x.toString());
-                        default:
-                            return x.toString();
+                            return "__".concat(x.toString(), "__");
                     }
                 }
                 

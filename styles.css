@@ -3,6 +3,7 @@ body {
     background-repeat:no-repeat;
     background-position: top left;
     background-color: black;
+    font-family: 'VT323', monospace;
 }
 
 a {
@@ -29,6 +30,7 @@ p {
     position: relative;
     float:left;
     resize: both;
+    
 }
 
 .console button {
