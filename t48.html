@@ -4,7 +4,79 @@
     </head>
     <body>
         <div class="console">
-            <a>hey</a>
+            <a >root@website:~$ ./playGame.sh</a>
+            <br>
+            <div class="game" id="gameboard"></div>
+            <button onclick="up()" style="padding-left:35%;">up</button>
+            <br>
+            <button onclick="left()">left</button>
+            <button onclick="right()">right</button>
+            <br>
+            <button onclick="down()" style="padding-left:32%;">down</button>
+            <script type="application/javascript">
+                var values = [[0,0,0,123],
+                             [0,0,1,0],
+                             [0,0,2048,0],
+                             [0,12,0,0]];
+                
+                function up(){
+                    
+                }
+                
+                function down(){
+                    draw();
+                }
+                
+                function left(){
+                    
+                }
+                
+                function right(){
+                    
+                }
+                
+                function formatVal(x){
+                    var os = x.toString().length;
+                    switch(os){
+                        case 3:
+                            return "_".concat(x.toString());
+                        case 2:
+                            return "__".concat(x.toString());
+                        case 1:
+                            return "___".concat(x.toString());
+                        default:
+                            return x.toString();
+                    }
+                }
+                
+                function draw(){
+                    var board = document.getElementById("gameboard");
+                    if (board.firstChild){
+                        while (board.hasChildNodes()) {
+                            node.removeChild(board.lastChild);
+                        }
+                    }
+                    
+                    var temps = "";
+                    var tempe;
+                    var br = document.createElement("br");
+                    for (var i = 0; i< values.length; i++){
+                        temps = "";
+                        temps = temps.concat(formatVal(values[i][0]));
+                        for(var k = 1; k < values[i].length; k++){
+                            temps = temps.concat(" | ", formatVal(values[i][k]));
+                        }
+                        tempe = document.createElement("a");
+                        tempe.innerHTML = temps;
+                        board.appendChild(tempe);
+                        board.appendChild(document.createElement("br"));
+
+                    }
+                }
+                
+                
+                
+            </script>
         </div>
     </body>
 </html>

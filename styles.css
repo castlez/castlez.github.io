@@ -30,3 +30,16 @@ p {
     float:left;
     resize: both;
 }
+
+.console button {
+    border: none;
+    background: none;
+    padding-left: 20%;
+    font-size: 70%;
+    color: lawngreen;
+}
+
+.game {
+    padding-left: 5%;
+}
+
