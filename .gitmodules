@@ -1,0 +1,3 @@
+[submodule "JaWeatherMon"]
+	path = JaWeatherMon
+	url = https://github.com/castlez/JaWeatherMon
