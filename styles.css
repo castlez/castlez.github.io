@@ -12,9 +12,16 @@ a {
 
 .title {
     font-size: 200%;
+    margin-right: 30%;
 }
 
 p {
+    color: lawngreen;
+    margin: 0;
+    margin-right: 55%;
+    padding-bottom: 0;
+}
+h1 {
     color: lawngreen;
     margin: 0;
     margin-right: 30%;
