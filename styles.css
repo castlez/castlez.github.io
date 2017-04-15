@@ -17,11 +17,18 @@ a {
 
 p {
     color: lawngreen;
-    margin: 0;
-    pad
-    margin-right: 55%;
+    margin:auto;
     padding-bottom: 0;
 }
+
+.toys {
+    margin-right: 55%;
+}
+
+.bio {
+    margin-right:49%;
+}
+
 h1 {
     color: lawngreen;
     margin: 0;
